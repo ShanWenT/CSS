@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Cascading</title>
+    <link rel="stylesheet" href="styles.css" type=text/css>
+    <style>
+      p {
+        background-color: yellow;
+      }
+      p#p2 {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Para text</p>
+    <p id="p2">Para text</p>
+    <p>Para text</p>
+    <p>Para text</p>
+    <p>Para text</p>
+    <!--1. Nearest style overrides farest style
+        2. more specific selector overrides less specific selector-->
+  </body>
+</html>

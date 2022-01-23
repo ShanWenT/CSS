@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PES</title>
+    <!-- Syntax
+    selector :: Pseudo-element-name{
+        declaration List
+    } -->
+    <style>
+      p::first-letter {
+        color: hotpink;
+      }
+      p::first-line {
+        color: indigo;
+      }
+      p::selection {
+        color: lawngreen;
+      }
+      p::before {
+        content: "dam what a waste of time";
+      }
+      p::after {
+        content: "........";
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Pseudo Element Selectors</h2>
+    <hr />
+    <br />
+    <p>
+      @!Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius explicabo
+      quibusdam vitae repellat, vero cum corrupti a doloremque error sit minima
+      placeat omnis? Excepturi, laboriosam nam eum nemo sint nesciunt?
+    </p>
+    <p>
+      !Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit similique
+      aspernatur nulla? Explicabo magnam iure saepe totam natus nisi blanditiis,
+      aspernatur assumenda culpa, eius optio sapiente molestiae officia beatae
+      pariatur.
+    </p>
+    <p>
+      !Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+      voluptates eveniet, laboriosam repellat ipsum doloribus explicabo veniam
+      ut dolores officiis? Ducimus numquam quae pariatur eveniet amet ab
+      suscipit sit nulla!
+    </p>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selector in CSS</title>
+    <style>
+      p[align="right"] {
+        color: darkgoldenrod;
+      }
+      /* begins with symbol = ^ */
+      h3[align^="c"] {
+        background-color: darkgray;
+      }
+      a[href^="https"] {
+        background-color: darkmagenta;
+      }
+
+      /* ends with symbol = $ */
+      p[align$="t"] {
+        background-color: orange;
+      }
+      a[href$=".com"] {
+        background-color: orchid;
+      }
+      /* contains with = * */
+      a[href*=".com"] {
+        border: 5px solid yellow;
+      }
+      a[title*="visit"] {
+        background-color: tomato;
+      }
+      a[title$="page"] {
+        background-color: blue;
+      }
+      /* contain whitespace = ~ */
+      a[title~="page"] {
+        color: turquoise;
+      }
+      /* preceded with = | */
+      a[lang|="en"] {
+        border: 4px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Attribute selector in css</h2>
+    <hr />
+    <br />
+    <div id="div1">
+      <h3 align="center">Heading 1</h3>
+      <p align="right">Para text1</p>
+      <a
+        href="https://www.facebook.com"
+        title="visit my facebook page"
+        lang="en-UK"
+        >Visit facebook</a
+      >
+    </div>
+    <hr />
+    <div id="div2">
+      <h3 align="center">Heading 2</h3>
+      <p align="right">Para text2</p>
+      <a href="https://www.instagram.com" title="visit my instagram"
+        >Visit Instagram</a
+      >
+      <p align="right">para text 3</p>
+    </div>
+  </body>
+</html>

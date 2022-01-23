@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selector</title>
+    <style>
+      p[align="center"] {
+        background-color: aqua;
+      }
+
+      [align] {
+        color: darkblue;
+      }
+      p[align] {
+        background-color: darkcyan;
+      }
+      p#p1 {
+        background: darkgoldenrod;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Attribute Selector in CSS</h2>
+    <!-- selector[attr-expression]{
+        declaration list;
+    } 
+    aatr-exp-[attrname = "attr-value"]-->
+    <hr />
+    <br />
+    <p align="center" id="p1">Hello CSS1</p>
+    <p align="right">Hello CSS2</p>
+    <p align="left">Hello CSS3</p>
+    <p>Hello css4</p>
+    <h2 align="center">Hello CSS5</h2>
+  </body>
+</html>

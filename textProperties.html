@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Properties</title>
+    <style type="text/css">
+      /* 1. Text-color
+        1. color names
+        2. rgb or rgba
+        3. hsl or hsla
+        4. Hex -->
+        2. Background-color
+        3. text-align-left(default), right, center, justify
+        4. text-align-last
+        5. Text-direction
+            1. direction-ltr(default), rtl
+            1. unicode-bidi
+        6. text-decoration-
+            text-decoration-line- overline, underline, linethrough, none
+            text-decoration-style - solid, double, wavy
+            text-decoration-color- color code
+            text-decoration: line style color
+        7. text-transform : uppercase, lowercase, capitalize(first letter)
+        8. text- indent
+        9. vertical-align- super,sub, text-top, text-bottom, sub, baseline(default)
+        10. line-height
+        11  letter-spacing
+        12. word-spacing
+        13 white-space
+    
+    */
+
+      p {
+        color: rgb(0, 255, 255);
+        background-color: blue;
+        text-align: justify;
+        text-align-last: left;
+        direction: ltr;
+        text-indent: 160px;
+        line-height: 20px;
+        letter-spacing: 1.5px;
+        word-spacing: 5px;
+        white-space: inherit;
+      }
+
+      .p1 {
+        direction: rtl;
+        unicode-bidi: bidi-override;
+        text-transform: uppercase;
+      }
+      img#i {
+        text-decoration: underline overline wavy red;
+        vertical-align: baseline;
+      }
+      span.h2 {
+        vertical-align: -webkit-baseline-middle;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Text Properties in CSS</h2>
+    <hr />
+    <br />
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
+      eveniet cumque neque maiores labore veritatis doloremque, cupiditate
+      distinctio, dicta mollitia expedita! Deserunt non ut ab modi earum
+      provident consequatur eos. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Illum harum neque animi explicabo dolorem dicta ullam
+      eveniet facere tempora expedita tempore, aut corrupti laboriosam veniam
+      nulla provident architecto ratione! Ad.
+    </p>
+    <br />
+    <p class="p1">Hello</p>
+    <h1>
+      Hello
+      <img
+        src="/HTML/images/Toilet paper.jpg"
+        id="i"
+        width="20px"
+        height="20px"
+        alt=""
+      />Welcome
+    </h1>
+    <h2>This is <span class="h2">H2</span>heading tag</h2>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PCS</title>
+    <style>
+      html:root {
+        background-color: seagreen;
+        color: white;
+      }
+      p {
+        background-color: red;
+      }
+      p:empty {
+        border: 6px solid red;
+      }
+      p:first-child {
+        background-color: royalblue;
+      }
+      p:last-child {
+        background-color: royalblue;
+      }
+      p:only-child {
+        background: blue;
+      }
+      p:first-of-type {
+        border: 2px solid greenyellow;
+      }
+      p:last-of-type {
+        background-color: lightseagreen;
+      }
+      p:only-of-type {
+        border: 4px solid gold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Structural pseudo class selector</h2>
+    <br />
+    <hr />
+    <br />
+    <div>
+      <p>Hello css1</p>
+      <p>Hello css2</p>
+      <p></p>
+      <p>Hello css3</p>
+      <p>Hello css4</p>
+      <h3>hello 3</h3>
+    </div>
+    <div>
+      <h3>hello 3</h3>
+      <p>Hello css5</p>
+      <p>Hello css6</p>
+      <p></p>
+      <p>Hello css7</p>
+      <p>Hello css8</p>
+    </div>
+    <hr />
+    <div>
+      <h1>hello</h1>
+      <p>Hello css9</p>
+    </div>
+  </body>
+</html>

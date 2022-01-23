@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists in CSS</title>
+    <style>
+      /* shorthand property
+        list-style: type position image */
+      ul {
+        list-style-type: circle;
+        list-style-image: url(/HTML/images/Food.jpg);
+        list-style-position: inside;
+
+        /* shorthand- list-style: circle inside url(); */
+      }
+      .order {
+        list-style-type: upper-alpha;
+      }
+
+      * {
+        margin: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+    </ul>
+    <hr />
+    <ol class="order">
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+    </ol>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specificity</title>
+    <style>
+      p {
+        background-color: green !important; /*(1,0,0,0,1) -10001 */
+      }
+      .changecolor {
+        background-color: yellow; /*(0,0,0,1,0) - 10 */
+      }
+      p {
+        border: tomato; /* 1 */
+      }
+      p.dotted {
+        border: 2px dotted green; /* 11 */
+      }
+
+      body > p.dotted {
+        border: green; /* 12 */
+      }
+
+      #p1 {
+        background-color: green; /* 100 */
+      }
+
+      html > body > p#p1 {
+        background: green; /* 103 */
+      }
+    </style>
+  </head>
+  <body>
+    <p class="changecolor dotted" id="p1">Para txt</p>
+  </body>
+</html>
+
+1. !important-(1,0,0,0,0) -10000 2. inlind -(0,1,0,0,0,) -1000 3.
+ID-(0,0,1,0,0)-100 4. class,psuedo,class, attr-(0,0,0,1,0)-10 5. element, pseudo
+element - (0,0,0,0,1)-1 NOTE: 1. always try to reduce specificity of selector 2.
+never use !important unless necessary

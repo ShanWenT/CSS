@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nth structural Pseudoclass selector</title>
+    <style>
+      p:nth-child(2) {
+        border: 3px dotted blueviolet;
+      }
+      p:nth-last-child(3) {
+        background-color: burlywood;
+      }
+      p:nth-of-type(2) {
+        background-color: cadetblue;
+      }
+      p:nth-last-of-type(2) {
+        background-color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>nth-structural pseudo class selector</h2>
+    <!-- selector:pseudo-class-name(n){
+        declaration list;
+    } -->
+    <br />
+    <hr />
+    <br />
+    <div>
+      <p>Hello css1</p>
+      <p>Hello css2</p>
+      <p></p>
+      <p>Hello css3</p>
+      <p>Hello css4</p>
+      <h3>hello 3</h3>
+    </div>
+    <div>
+      <h3>hello 3</h3>
+      <p>Hello css5</p>
+      <p>Hello css6</p>
+      <p></p>
+      <p>Hello css7</p>
+      <p>Hello css8</p>
+    </div>
+    <hr />
+    <div>
+      <h1>hello</h1>
+      <p>Hello css9</p>
+    </div>
+  </body>
+</html>

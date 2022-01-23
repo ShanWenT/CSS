@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>csspre</title>
+
+    <style>
+      p {
+        background-color: royalblue;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    // Note: Nearest or closest rule or style gets high priority
+  </head>
+  <body>
+    <h2>order of precedence in css</h2>
+    <h5>Note: Nearest or closest rule or style gets high priority</h5>
+    <hr />
+    <br />
+    <p style="background-color: seagreen">Hello css</p>
+    <p>Hello css</p>
+    <p>Hello css</p>
+    <p>Hello css</p>
+    <br />
+    <h4>Order of precedence</h4>
+    <hr />
+    <ol>
+      <li>Inline style</li>
+      <li>Internal or embedded</li>
+      <li>External</li>
+      <li>browser default style</li>
+    </ol>
+  </body>
+</html>

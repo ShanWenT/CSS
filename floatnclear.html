@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float and clear</title>
+    <style>
+      #parent1 {
+        border: 2px solid black;
+      }
+      #div1 {
+        width: 100px;
+        height: 100px;
+        background-color: slateblue;
+        float: right;
+      }
+      #div2 {
+        width: 100px;
+        height: 100px;
+        background-color: greenyellow;
+        float: right;
+      }
+      #div3 {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        float: right;
+      }
+
+      .clear-right::after {
+        content: "";
+        display: block;
+        clear: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent1" class="clear-right">
+      <div id="div1"></div>
+      <div id="div2"></div>
+      <div id="div3"></div>
+    </div>
+  </body>
+</html>

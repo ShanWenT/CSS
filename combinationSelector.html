@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combination Selector</title>
+    <style>
+      .redborder {
+        border: 5px solid red;
+      }
+      .greenborder {
+        border: 5px solid green;
+      }
+      .blueborder {
+        border: 5px solid blue;
+      }
+      .cyanbg {
+        background-color: cyan;
+      }
+      h1.blueborder {
+        background-color: darkorchid;
+      }
+      p.blueborder[align=right]
+      {
+          background-color: darkred;
+      }
+      #green.greenborder{
+          background-color: deeppink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="redborder cyanbg">hello css</h1>
+    <p class="redborder">hello css</p>
+    <h1 class="redborder cyanbg">hello css</h1>
+    <p class="redborder">hello css</p>
+    <h1 class="greenborder">hello css</h1>
+    <p id="green" class="greenborder">hello css</p>
+    <h1 class="blueborder">hello css</p>
+    <p class="blueborder" align="right">hello css</p>
+    <h1>hello css</h1>
+    <p>hello css</p>
+  </body>
+</html>
