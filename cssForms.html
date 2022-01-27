@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Forms</title>
+    <style>
+      input[type="text"] {
+        width: 100px;
+        transition: width 3s linear;
+      }
+      input[type="text"]:focus {
+        background-color: cyan;
+        border: 4px solid black;
+        opacity: 0.5;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="1"> Name : </label>
+      <input type="text" id="1" />
+    </form>
+  </body>
+</html>

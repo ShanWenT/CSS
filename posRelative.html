@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>relative</title>
+    <style type="text/css">
+      div#wrapper {
+        border: 2px solid red;
+        height: 200px;
+        position: relative;
+        top: 100px;
+      }
+      div#div1 {
+        position: relative;
+        border: 2px solid blue;
+        width: 100px;
+        height: 100px;
+        left: 1420px;
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- position relative is used to position html element relative to its normal position -->
+    <div id="wrapper">
+      <div id="div1">div 1</div>
+    </div>
+  </body>
+</html>

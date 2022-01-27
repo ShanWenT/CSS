@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animations</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: purple;
+        animation-name: ani1;
+        animation-duration: 6s;
+        position: relative;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        /* short-hand property 
+animation: name duration timing-func delay iteration-count direction fill-mode
+animation: ani1 3s linear 2s infinite  reverse forwards
+*/
+      }
+      @keyframes ani1 {
+        /* from {
+          background-color: purple;
+        }
+        to {
+          background-color: palegreen;
+        } */
+
+        /* 0% {
+          background-color: purple;
+          left: 0px;
+          top: 0px;
+        }
+        30% {
+          background-color: plum;
+          left: 300px;
+          top: 0px;
+        }
+        60% {
+          background-color: blue;
+          top: 300px;
+          left: 300px;
+        }
+        90% {
+          background-color: greenyellow;
+          left: 0px;
+          top: 300px;
+        }
+        100% {
+          background-color: green;
+          top: 0px;
+          left: 0px;
+        } */
+        from {
+          left: 0px;
+          background-color: greenyellow;
+        }
+        to {
+          left: 300px;
+          background-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fixed</title>
+    <style type="text/css">
+      div#wrapper {
+        min-height: 200px;
+        background-color: lightslategray;
+      }
+      div#nav-div {
+        height: 50px;
+        background-color: black;
+        color: white;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+      }
+      div#content-div {
+        background-color: orange;
+        padding-top: 80px;
+      }
+      div#chat-box-div {
+        background-color: yellowgreen;
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- is used to position and pin or (fix) an html element relative to the edges of the browsers viewpoint -->
+
+    <div id="wrapper">
+      <div id="nav-div">Navigation bar</div>
+      <div id="content-div">
+        some content 1<br /><br /><br /><br />
+        some content 2<br /><br /><br /><br />
+        some content 3<br /><br /><br /><br />
+        some content 4<br /><br /><br /><br />
+        some content 5<br /><br /><br /><br />
+        some content 6<br /><br /><br /><br />
+        some content 7<br /><br /><br /><br />
+        some content 8<br /><br /><br /><br />
+        some content 9<br /><br /><br /><br />
+        some content 10<br /><br /><br /><br />
+        some content 11<br /><br /><br /><br />
+      </div>
+      <div id="chat-box-div">
+        <form>
+          <label>Enter your query</label><br />
+          <input type="text" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

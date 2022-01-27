@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      #parent-container {
+        background-color: cadetblue;
+        display: flex;
+        /* property allows us to specify direction to container to arrange flex items -
+        value - row(default), row-reverse,column,column-reverse */
+        /* flex-direction: column-reverse;
+        flex-wrap: wrap; */
+        flex-flow: column-reverse wrap; /* shorthand */
+        align-items: flex-end;
+        /* justify-content:space-around; */
+      }
+      #parent-container > div {
+        background-color: cornsilk;
+        font-size: 35px;
+        padding: 30px;
+        margin: 20px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Flex box is a 1-dimensional layout method for arranging items in rows and column -->
+    <div id="parent-container">
+      <div style="flex-grow: 1">4</div>
+      <div style="flex-grow: 3">5</div>
+      <div style="flex-grow: 1">6</div>
+    </div>
+  </body>
+</html>
